@@ -1,0 +1,12 @@
+<form method="post" action="/new_instrument">
+    {{ form.csrf_token }}
+    <div>
+        {{form.date_bought.label}} {{form.date_bought()}}
+        {{form.nickname.label}} {{form.nickname()}}
+        {{form.year.label}} {{form.year()}}
+        {{form.maker.label}} {{form.maker()}}
+        {{form.type.label}} {{form.type()}}
+        {{form.used.label}} {{form.used()}}
+        {{form.submit()}}
+    </div>
+</form>
